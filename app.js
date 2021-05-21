@@ -15,6 +15,7 @@ App({
     })
     wx.getSystemInfo({
       success: function(res) {
+        console.log("test")
         console.log(res.pixelRatio)
         console.log(res.screenWidth)
         console.log(res.screenHeight)
