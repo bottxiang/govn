@@ -1,0 +1,31 @@
+.movie {
+  display: flex;
+}
+.movie-image {
+  width: 200rpx;
+  height: 350rpx;
+}
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  width: 650rpx;
+}
+.movie-swiper {
+  height: 90vh;
+}
+.movie-card {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  position: relative;
+}
+.return-button {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  font-size: 26rpx;
+  font-style: italic;
+  border: 1px solid blue;
+  border-right: 0;
+  border-radius: 10%;
+}

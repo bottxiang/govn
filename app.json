@@ -1,13 +1,30 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/weekly/weekly",
+    "pages/about/about",
+    "pages/detail/detail"
   ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/weekly/weekly",
+      "text": "每周推荐",
+      "iconPath": "images/icons/discover.png",
+      "selectedIconPath": "images/icons/discover-fill.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "images/icons/my.png",
+      "selectedIconPath": "images/icons/my-fill.png"
+    }
+  ],
+  "color": "#8e8e8e",
+  "selectedColor": "#000"
+  },
   "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#433CF0",
-    "navigationBarTitleText": "GOVN",
-    "navigationBarTextStyle":"white"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

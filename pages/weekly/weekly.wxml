@@ -1,0 +1,21 @@
+<view class="">
+  <text>本周推荐</text>
+  <!-- <image src="/images/avatar2009.png"></image>
+  <text>阿凡达（2009）</text>
+  <text>点评：派遣到潘多拉（Pandora）的截瘫海军陆战队员执行一项独特的任务，在遵循他的命令与保护他认为是他的家园的世界之间陷入了困境。</text>
+  <text>{{score>=60?"及格":"不及格"}}</text> -->
+  <swiper class="movie-swiper" indicator-dots="true" current="{{currentIndex}}">
+    <swiper-item class="movie" wx:for="{{weeklyMovieList}}">
+      <view class="container movie-card" 
+        bindtap="f1"
+        data-movie-id="{{item.id}}"
+      >
+        <image class="movie-image" src="{{item.imagePath}}"></image>
+        <text>第{{index+1}}周: {{item.name}}</text>
+        <text>点评：{{item.comment}}</text>
+        <text wx:if="{{item.isHighlyRecommended}}" style="font-size: 31rpx; color: red;">强烈推荐</text>
+        <text class="return-button" catchtap="f0" wx:if="{{index < (weeklyMovieList.length-1)}}">返回本周</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
